@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "dev:server": "cd server && node --watch index.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "install:server": "npm --prefix server install",
+    "build:render": "npm run install:server"
   },
   "dependencies": {
     "react": "^19.2.8",
